@@ -14,7 +14,7 @@ public class AppController {
     
     @RequestMapping("/healthcheck")
     public String index(ModelMap map) {
-        map.addAttribute("message", "Feng Ce project");
+        map.addAttribute("message", "FengCe project is running.");
          logger.info("Feng Ce project is running.");
         return "hello";
     }
