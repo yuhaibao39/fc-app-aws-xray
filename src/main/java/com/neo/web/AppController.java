@@ -12,7 +12,7 @@ public class AppController {
     private static final Logger logger = LoggerFactory.getLogger(AppController.class);
 
     
-    @RequestMapping("/healthcheck")
+    @RequestMapping("/run")
     public String index(ModelMap map) {
         map.addAttribute("message", "FengCe project is running.");
          logger.info("Feng Ce project is running.");
