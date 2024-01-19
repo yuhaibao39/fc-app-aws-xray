@@ -11,6 +11,14 @@ public class ExampleController {
 
     private static final Logger logger = LoggerFactory.getLogger(ExampleController.class);
 
+    
+    @RequestMapping("/healthcheck")
+    public String index(ModelMap map) {
+        map.addAttribute("message", "Feng Ce project");
+         logger.info("Feng Ce project is running.");
+        return "hello";
+    }
+
     @RequestMapping("/string")
     public String string(ModelMap map) {
 
