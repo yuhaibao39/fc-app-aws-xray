@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AppController {
 
-    private static final Logger logger = LoggerFactory.getLogger(ExampleController.class);
+    private static final Logger logger = LoggerFactory.getLogger(AppController.class);
 
     
     @RequestMapping("/healthcheck")
