@@ -1,16 +1,20 @@
 package com.neo.model;
 
-import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.constraints.NotEmpty;
+import java.io.Serializable;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.Size;
+/**
+ * 用户模型。
+ */
+public class User implements Serializable {
 
-public class User {
+    private static final long serialVersionUID = 1L;
+
     private String name;
     private int age;
     private String pass;
+
+    public User() {
+    }
 
     public User(String name, int age, String pass) {
         this.name = name;
@@ -44,6 +48,6 @@ public class User {
 
     @Override
     public String toString() {
-        return ("name=" + this.name + ",age=" + this.age + ",pass=" + this.pass);
+        return "User{name='" + name + "', age=" + age + ", pass='" + pass + "'}";
     }
 }
